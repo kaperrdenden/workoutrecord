@@ -1,9 +1,10 @@
 const Calendar = () => {
     const date = new Date();
-    const prevLast = new Date(viewYear, viewMonth, 0);
-    const thisLast = new Date(viewYear, viewMonth + 1, 0);
+   
     const viewYear = date.getFullYear();
     const viewMonth = date.getMonth();
+    const prevLast = new Date(viewYear, viewMonth, 0);
+    const thisLast = new Date(viewYear, viewMonth + 1, 0);
     console.log(date.getFullYear());
     return(
         <div className="calendar">
