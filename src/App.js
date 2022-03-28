@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import ListForExercise from './components/ListForExercise';
 import InputForm from './components/InputForm'
-
+import Calendar from './Calendar';
 
 import './App.css';
 
@@ -10,6 +10,7 @@ function App() {
     <div className="App">
       <InputForm />
       <ListForExercise />
+      <Calendar />
     </div>
   );
 }
