@@ -5,6 +5,11 @@ const Calendar = () => {
     const viewMonth = date.getMonth();
     const prevLast = new Date(viewYear, viewMonth, 0);
     const thisLast = new Date(viewYear, viewMonth + 1, 0);
+    const PLDate = prevLast.getDate();
+    const PLDay = prevLast.getDay();
+
+    const TLDate = thisLast.getDate();
+    const TLDay = thisLast.getDay();    
     console.log(date.getFullYear());
     return(
         <div className="calendar">
