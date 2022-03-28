@@ -11,6 +11,9 @@ const Calendar = () => {
     const TLDate = thisLast.getDate();
     const TLDay = thisLast.getDay();    
     console.log(date.getFullYear());
+    const prevDates = [];
+const thisDates = [...Array(TLDate + 1).keys()].slice(1);
+const nextDates = [];
     return(
         <div className="calendar">
             <div className="calendar-header">
