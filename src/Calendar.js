@@ -14,9 +14,7 @@ const Calendar = () => {
     const prevDates = [];
     const thisDates = [...Array(TLDate + 1).keys()].slice(1);
     const nextDates = [];
-    const prevDates = [];
-    const thisDates = [...Array(TLDate + 1).keys()].slice(1);
-    const nextDates = [];
+    
     return(
         <div className="calendar">
             <div className="calendar-header">
