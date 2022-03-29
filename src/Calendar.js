@@ -14,7 +14,15 @@ const Calendar = () => {
     const prevDates = [];
     const thisDates = [...Array(TLDate + 1).keys()].slice(1);
     const nextDates = [];
-    
+    if (PLDay !== 6) {
+        for (let i = 0; i < PLDay + 1; i++) {
+          prevDates.unshift(PLDate - i);
+        }
+      }
+      
+      for (let i = 1; i < 7 - TLDay; i++) {
+        nextDates.push(i);
+      }
     return(
         <div className="calendar">
             <div className="calendar-header">
