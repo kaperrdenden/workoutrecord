@@ -31,9 +31,9 @@ const Calendar = () => {
                     {/* getMonth는 현재의 달보다 1작게 가져온다  */}
                 </div>
                 <div className="calendar-nav">
-                    <button className="calendar-navbtn go-prev">&lt</button>
+                    <button className="calendar-navbtn go-prev"> {"<"} </button>
                     <button className="calendar-navbtn go-today">Today</button>
-                    <button className="calendar-navbtn go-next">&gt</button>
+                    <button className="calendar-navbtn go-next">{">"}</button>
                 </div>
             </div>
             <div className="calendar-main">
